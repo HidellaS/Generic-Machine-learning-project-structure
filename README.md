@@ -1,6 +1,6 @@
-# This is an End to End Generic Machine learning project. we can use this structure for any machine learning project in the future. we only have to change the dataset and the algorithm. all the other steps are similar.
+# Generic Machine Learning Project Template.
 
-# here in the bottom we have the complete step by step
+## This repository provides a generic template for creating end-to-end machine learning projects. By following this structure, you can reuse the same workflow for future projects by simply swapping datasets and algorithms. The other steps remain consistent.
 
 #### 1- first create a repository in the github (and take a token for authentication if you don't have one already)
 
@@ -25,3 +25,22 @@
 #### 8- then in our vs code terminal type " git pull " to get the fils to our local pc
 
 #### 9- now if your virtual env name is not a typical name like env or venv etc.. then go inside the gitignore file and find the #Environments location and put your Environments name to the list.
+
+#### 10- create 2 new files in the project folder named setup.py and requirements.txt
+
+#### 11- setup.py is responsible in creating our machine learning project as a package and we can even install or use this package . we can deploy in pypi too
+
+#### 12- requirements.txt for our packages
+
+#### 13- once we created setup.py , how it going to find out how many packages are there and stuff. so for that we going to create another folder in the project called " src "
+
+#### 14- now inside that src folder we going to create another file called " __init__.py "   we use this so that we can find the src as a package
+
+#### 15 the __init__.py file marks the folder as a Python package, allowing imports to work correctly.
+
+#### 16- now whenever the setup.py run the  find_package() , it will just go and see in how many folders does it have this __init__.py  . so it wil directly concider this src as a package and it will build it . now we can import it anywhere like we importing pandas , numpy etc. but for that we need to put into pypy package
+
+#### 17- our entire project development will happen inside this src folder
+
+#### 18- after coding the setup.py for requirments then we go to terminal and run 'pip install -r requirements.txt'  this will install all the pacakges and will create info files, dependencies etc.
+
