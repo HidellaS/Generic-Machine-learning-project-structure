@@ -42,5 +42,16 @@
 
 #### 17- our entire project development will happen inside this src folder
 
-#### 18- after coding the setup.py for requirments then we go to terminal and run 'pip install -r requirements.txt'  this will install all the pacakges and will create info files, dependencies etc.
+#### 18- after coding the setup.py for requirements then we go to terminal and run 'pip install -r requirements.txt'  this will install all the pacakges and will create info files, dependencies etc.
 
+#### 19- create another folder called components in the src folder and put '__init__.py' file inside it
+
+#### 20- now create these files in it called data_ingestion.py and data_transformation.py and model_trainer.py . all these files in the components are mainly for training the model
+
+#### 21- create another folder called pipeline inside the src and create the '__init__.py' in it
+
+#### 22- create a file called 'train_pipeline.py' and 'predict_pipeline.py' inside the pipeline folder. this file will trigger all the components in the previous folder
+
+#### 23- create these files inside the src folder named 'logger.py' , 'exception.py' , 'utils.py'   (we can use utils.py for  read data from database, or save model in cloud etc.)
+
+#### 24- code all the logging, exception and utils files according to the project
