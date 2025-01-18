@@ -55,3 +55,5 @@
 #### 23- create these files inside the src folder named 'logger.py' , 'exception.py' , 'utils.py'   (we can use utils.py for  read data from database, or save model in cloud etc.)
 
 #### 24- code all the logging, exception and utils files according to the project
+
+#### 25- after completing the 'data_ingestion.py' code . we should add .artifact to the gitignore file. because we don't need it to go to github
